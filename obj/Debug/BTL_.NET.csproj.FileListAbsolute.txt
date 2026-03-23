@@ -1,0 +1,336 @@
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL.Diem.FrmDiem.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_admin.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_gv.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_truongkhoa.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_user.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.HeThong.ht_DoiMK.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL.Log_Sig.FrmDangKy.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Log_Sig.FrmDangNhap.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Properties.Resources.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_chinhsach.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_diem.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_gv.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_khoa.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_lop.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_monhoc.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_sinhvien.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_chinhsach.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_diem.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_gv.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_khoa.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_lop.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_monhoc.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_sinhvien.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_chinhsach.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_giaovien.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_khoa.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_lop.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_monhoc.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_sinhvien.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\BTL_.NET.exe.config
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\BTL_.NET.exe
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\BTL_.NET.pdb
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.exe
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.pdb
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\EnvDTE.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\stdole.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.CopyComplete
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtinkhoa.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\en\BTL_.NET.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\vi\BTL_.NET.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\en\BTL_.NET.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\vi\BTL_.NET.resources.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtingiaovien.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Data.v23.1.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Drawing.v23.1.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Utils.v23.1.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtinchinhsach.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtindiem.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtinlop.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtinmonhoc.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.inthongtin.inthongtinsinhvien.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Hotro.Capnhatphanmem.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Hotro.Lienhe.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Hotro.Thongtin.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zxing.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zxing.presentation.dll
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zxing.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\bin\Debug\zxing.presentation.xml
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL.FormChinh.frmformchinh.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL.FormChinh.frmformchinh.en.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL.FormChinh.frmformchinh.vi.resources
+C:\Users\DELL\Documents\C#\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Trangchu.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\BTL_.NET.exe.config
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\BTL_.NET.exe
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\BTL_.NET.pdb
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\en\BTL_.NET.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\vi\BTL_.NET.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.CodeDom.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zxing.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zxing.presentation.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\EnvDTE.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\stdole.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.CodeDom.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zxing.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zxing.presentation.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.AssemblyReference.cache
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL.Diem.FrmDiem.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.FormGiaoVien.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL.FormChinh.frmformchinh.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_admin.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_gv.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.HeThong.ht_DoiMK.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL.Log_Sig.FrmDangKy.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Log_Sig.FrmDangNhap.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Properties.Resources.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_diem.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_gv.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_monhoc.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_ql_sinhvien.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_diem.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_gv.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_monhoc.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_giaovien.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_lop.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_monhoc.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.TimKiem.tk_sinhvien.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Trangchu.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL.FormChinh.frmformchinh.en.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL.FormChinh.frmformchinh.vi.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.GenerateResource.cache
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.CoreCompileInputs.cache
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\en\BTL_.NET.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\vi\BTL_.NET.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.Up2Date
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.exe
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.pdb
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.exe.config
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_cnk.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.quanlytaikhoan.frm_qltk_sinhvien.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Azure.Core.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Azure.Identity.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Bcl.Cryptography.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Buffers.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.ClientModel.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Memory.Data.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Memory.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Text.Json.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.ValueTuple.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Azure.Core.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Azure.Identity.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Bcl.Cryptography.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Buffers.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.ClientModel.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Memory.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Memory.Data.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Text.Json.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\System.ValueTuple.xml
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.HeThong.frm_qltk_ph.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.thongtin.frm_tt_ph.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.QuanLy.frm_ql_ph.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.HoSo.Form1.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.QuanLy.frm_ql_cn.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL1.thongtin.frm_tt_cn.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.chart.ChartDiem.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.chart.ChartDiemToanKhoa.resources
+C:\Users\Bien\Documents\Zalo Received Files\BTL_.NET\BTL_.NET\obj\Debug\BTL_.NET.Form2.resources
