@@ -6,6 +6,8 @@ https://docs.google.com/document/d/1HNT2amRK0cOjBFS5GODB-zQwgP34zm48/edit?usp=sh
 
 
  **Chức năng chính**
+
+ 
 Quản lý hồ sơ: Thêm mới, chỉnh sửa thông tin và xóa sinh viên.
 
 Tìm kiếm: Tra cứu sinh viên nhanh theo Mã SV hoặc Họ tên.
@@ -15,6 +17,8 @@ Danh sách: Hiển thị toàn bộ sinh viên dưới dạng bảng (DataGridVi
 Kết nối CSDL: Kết nối trực tiếp với SQL Server để lưu trữ dữ liệu bền vững.
 
  **Công nghệ sử dụng**
+
+ 
 Ngôn ngữ: C# (.NET Framework)
 
 Giao diện: Windows Forms (WinForms)
@@ -24,6 +28,8 @@ Cơ sở dữ liệu: Microsoft SQL Server 2019+
 Công cụ: Visual Studio 2019/2022
 
 **Hướng dẫn cài đặt**
+
+
 Để chạy dự án này trên máy cục bộ, bạn thực hiện các bước sau:
 
 1. Chuẩn bị Cơ sở dữ liệu
