@@ -1,5 +1,10 @@
 Đây là ứng dụng quản lý thông tin sinh viên được xây dựng trên nền tảng .NET WinForms, sử dụng cơ sở dữ liệu SQL Server. Dự án tập trung vào các thao tác quản lý dữ liệu cơ bản (CRUD) và giao diện người dùng trực quan.
 
+
+báo cáo đồ án:
+https://docs.google.com/document/d/1HNT2amRK0cOjBFS5GODB-zQwgP34zm48/edit?usp=sharing&ouid=118306648873789996927&rtpof=true&sd=true
+
+
  **Chức năng chính**
 Quản lý hồ sơ: Thêm mới, chỉnh sửa thông tin và xóa sinh viên.
 
