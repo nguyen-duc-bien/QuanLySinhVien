@@ -1,0 +1,2378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01B9EC3C-DBDD-47D2-A6D2-954C79282B72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTL_.NET</RootNamespace>
+    <AssemblyName>BTL_.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azure.Core, Version=1.38.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Core.1.38.0\lib\net472\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity, Version=1.11.4.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Identity.1.11.4\lib\netstandard2.0\Azure.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Licensing.6.1.1\lib\net472\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.9.0.0\lib\net472\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.1.Core, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Cryptography.8.0.0\lib\net462\Microsoft.Bcl.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient, Version=6.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.SqlClient.6.0.2\lib\net462\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net462\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client, Version=4.61.3.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.4.61.3\lib\net462\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal, Version=4.61.3.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.Extensions.Msal.4.61.3\lib\netstandard2.0\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.7.5.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.7.5.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.7.5.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.7.5.0\lib\net472\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.7.5.0\lib\net472\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ClientModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ClientModel.1.0.0\lib\netstandard2.0\System.ClientModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.9.0.4\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.7.5.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.AccessControl.5.0.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data, Version=1.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.Data.1.0.2\lib\net461\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.8.0.1\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.ProtectedData.4.7.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.10\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chart\ChartDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart\ChartDiem.Designer.cs">
+      <DependentUpon>ChartDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\ChartDiemToanKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart\ChartDiemToanKhoa.Designer.cs">
+      <DependentUpon>ChartDiemToanKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diem\FrmDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diem\FrmDiem.Designer.cs">
+      <DependentUpon>FrmDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiaoVien.Designer.cs">
+      <DependentUpon>FormGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChinh\FormChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\FormChinh.Designer.cs">
+      <DependentUpon>FormChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_ph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_ph.Designer.cs">
+      <DependentUpon>frm_qltk_ph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_admin.Designer.cs">
+      <DependentUpon>frm_qltk_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_gv.Designer.cs">
+      <DependentUpon>frm_qltk_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_cnk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_cnk.Designer.cs">
+      <DependentUpon>frm_qltk_cnk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frm_qltk_sinhvien.Designer.cs">
+      <DependentUpon>frm_qltk_sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\ht_DoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\ht_DoiMK.Designer.cs">
+      <DependentUpon>ht_DoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoSo\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoSo\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_Sig\FrmDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_Sig\FrmDangKy.Designer.cs">
+      <DependentUpon>FrmDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_Sig\FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_Sig\FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_cn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_cn.Designer.cs">
+      <DependentUpon>frm_ql_cn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_ph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_ph.Designer.cs">
+      <DependentUpon>frm_ql_ph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_diem.Designer.cs">
+      <DependentUpon>frm_ql_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_gv.Designer.cs">
+      <DependentUpon>frm_ql_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_monhoc.Designer.cs">
+      <DependentUpon>frm_ql_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frm_ql_sinhvien.Designer.cs">
+      <DependentUpon>frm_ql_sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="thongtin\frm_tt_cn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_cn.Designer.cs">
+      <DependentUpon>frm_tt_cn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_ph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_ph.Designer.cs">
+      <DependentUpon>frm_tt_ph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_diem.Designer.cs">
+      <DependentUpon>frm_tt_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_gv.Designer.cs">
+      <DependentUpon>frm_tt_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtin\frm_tt_monhoc.Designer.cs">
+      <DependentUpon>frm_tt_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem\tk_giaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiem\tk_giaovien.Designer.cs">
+      <DependentUpon>tk_giaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem\tk_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiem\tk_lop.Designer.cs">
+      <DependentUpon>tk_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem\tk_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiem\tk_monhoc.Designer.cs">
+      <DependentUpon>tk_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem\tk_sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiem\tk_sinhvien.Designer.cs">
+      <DependentUpon>tk_sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trangchu.Designer.cs">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chart\ChartDiem.resx">
+      <DependentUpon>ChartDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\ChartDiemToanKhoa.resx">
+      <DependentUpon>ChartDiemToanKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diem\FrmDiem.resx">
+      <DependentUpon>FrmDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiaoVien.resx">
+      <DependentUpon>FormGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\FormChinh.en.resx">
+      <DependentUpon>FormChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\FormChinh.resx">
+      <DependentUpon>FormChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\FormChinh.vi.resx">
+      <DependentUpon>FormChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frm_qltk_admin.resx">
+      <DependentUpon>frm_qltk_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frm_qltk_gv.resx">
+      <DependentUpon>frm_qltk_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frm_qltk_cnk.resx">
+      <DependentUpon>frm_qltk_cnk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frm_qltk_ph.resx">
+      <DependentUpon>frm_qltk_ph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frm_qltk_sinhvien.resx">
+      <DependentUpon>frm_qltk_sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\ht_DoiMK.resx">
+      <DependentUpon>ht_DoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoSo\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_Sig\FrmDangKy.resx">
+      <DependentUpon>FrmDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_Sig\FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frm_ql_cn.resx">
+      <DependentUpon>frm_ql_cn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frm_ql_diem.resx">
+      <DependentUpon>frm_ql_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frm_ql_gv.resx">
+      <DependentUpon>frm_ql_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frm_ql_monhoc.resx">
+      <DependentUpon>frm_ql_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frm_ql_ph.resx">
+      <DependentUpon>frm_ql_ph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frm_ql_sinhvien.resx">
+      <DependentUpon>frm_ql_sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="thongtin\frm_tt_cn.resx">
+      <DependentUpon>frm_tt_cn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtin\frm_tt_diem.resx">
+      <DependentUpon>frm_tt_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtin\frm_tt_gv.resx">
+      <DependentUpon>frm_tt_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtin\frm_tt_monhoc.resx">
+      <DependentUpon>frm_tt_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtin\frm_tt_ph.resx">
+      <DependentUpon>frm_tt_ph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem\tk_giaovien.resx">
+      <DependentUpon>tk_giaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem\tk_lop.resx">
+      <DependentUpon>tk_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem\tk_monhoc.resx">
+      <DependentUpon>tk_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem\tk_sinhvien.resx">
+      <DependentUpon>tk_sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trangchu.resx">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Photo for Design Form\Developer_Icons_PNG.zip" />
+    <None Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets.rar" />
+    <None Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\Thumbs.db" />
+    <None Include="Photo for Design Form\New\buddy icons.rar" />
+    <None Include="Photo for Design Form\New\buddy icons\Thumbs.db" />
+    <None Include="Photo for Design Form\New\business-icons-for-vista-ico.zip" />
+    <None Include="Photo for Design Form\New\Copy of Alienware_Icon_Pack_by_CoyoteCreations.zip" />
+    <None Include="Photo for Design Form\New\Free-Icons-Shimmer-01-Creative-Freedom.zip" />
+    <None Include="Photo for Design Form\New\ht-ico.zip" />
+    <None Include="Photo for Design Form\New\icon for transformers_png\Thumbs.db" />
+    <None Include="Photo for Design Form\New\icon_for_transformers_by_ypf.rar" />
+    <None Include="Photo for Design Form\New\Thumbs.db" />
+    <None Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS.rar" />
+    <None Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\Thumbs.db" />
+    <None Include="Photo for Design Form\New\Web-Application-Icons-Set.zip" />
+    <None Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Thumbs.db" />
+    <None Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Thumbs.db" />
+    <None Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Thumbs.db" />
+    <None Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Thumbs.db" />
+    <None Include="Photo for Design Form\New\Web-Application-Icons-Set\Thumbs.db" />
+    <None Include="Photo for Design Form\PNG\Blue\24\Thumbs.db" />
+    <None Include="Photo for Design Form\PNG\Green\18\Thumbs.db" />
+    <None Include="Photo for Design Form\PNG\Green\24\Thumbs.db" />
+    <None Include="Photo for Design Form\PNG\Green\32\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\2667px-Golden_Medal_-1_Icon.svg.png" />
+    <Content Include="image\4438839.png" />
+    <Content Include="image\5966797.png" />
+    <Content Include="image\7207229.png" />
+    <Content Include="image\icon-law.jpg" />
+    <Content Include="image\icon-tu-van.png" />
+    <Content Include="image\images %281%29.png" />
+    <Content Include="image\images.jpg" />
+    <Content Include="image\images.png" />
+    <Content Include="image\information-technology-computer-icons-info.jpg" />
+    <Content Include="image\Logo-DH-Kinh-te-Ky-thuat-Cong-nghiep-UNETI.png" />
+    <Content Include="image\lovepik-calculator-fill-png-image_400327273_wh860.png" />
+    <Content Include="image\Microsoft_Paint.svg.png" />
+    <Content Include="image\phone-3297121_960_720.png" />
+    <Content Include="image\pngtree-microsoft-word-logo-icon-png-image_3588805.jpg" />
+    <Content Include="image\pngtree-vector-male-student-icon-png-image_862310.jpg" />
+    <Content Include="image\Screenshot 2023-07-10 161726.png" />
+    <Content Include="image\Screenshot 2023-07-17 051312.png" />
+    <Content Include="image\tải xuống %281%29.png" />
+    <Content Include="image\tải xuống %282%29.png" />
+    <Content Include="image\tải xuống %283%29.png" />
+    <Content Include="image\tải xuống.jpg" />
+    <Content Include="image\tải xuống.png" />
+    <Content Include="Photo for Design Form\1207396715B4066k.jpg" />
+    <Content Include="Photo for Design Form\3d bar chart.png" />
+    <Content Include="Photo for Design Form\500px-Crystal_Clear_action_exit.svg.png" />
+    <Content Include="Photo for Design Form\600px-information_iconsvg.png" />
+    <Content Include="Photo for Design Form\Abort.png" />
+    <Content Include="Photo for Design Form\About.png" />
+    <Content Include="Photo for Design Form\Accounting.png" />
+    <Content Include="Photo for Design Form\add user.png" />
+    <Content Include="Photo for Design Form\Address book.png" />
+    <Content Include="Photo for Design Form\Alarm clock.png" />
+    <Content Include="Photo for Design Form\Alarm.png" />
+    <Content Include="Photo for Design Form\Alien.png" />
+    <Content Include="Photo for Design Form\Anchor.png" />
+    <Content Include="Photo for Design Form\Application.png" />
+    <Content Include="Photo for Design Form\Apply.png" />
+    <Content Include="Photo for Design Form\Back.png" />
+    <Content Include="Photo for Design Form\Bad mark.png" />
+    <Content Include="Photo for Design Form\Bee.png" />
+    <Content Include="Photo for Design Form\Black pin.png" />
+    <Content Include="Photo for Design Form\Blog.png" />
+    <Content Include="Photo for Design Form\Blue key.png" />
+    <Content Include="Photo for Design Form\Blue pin.png" />
+    <Content Include="Photo for Design Form\Bomb.png" />
+    <Content Include="Photo for Design Form\Boss.png" />
+    <Content Include="Photo for Design Form\Bottom.png" />
+    <Content Include="Photo for Design Form\Briefcase.png" />
+    <Content Include="Photo for Design Form\Brush.png" />
+    <Content Include="Photo for Design Form\Bubble.png" />
+    <Content Include="Photo for Design Form\Buy.png" />
+    <Content Include="Photo for Design Form\Calculator.png" />
+    <Content Include="Photo for Design Form\Calendar.png" />
+    <Content Include="Photo for Design Form\Cancel.png" />
+    <Content Include="Photo for Design Form\Car key.png" />
+    <Content Include="Photo for Design Form\CCRQInvoice.png" />
+    <Content Include="Photo for Design Form\CD.png" />
+    <Content Include="Photo for Design Form\Clipboard.png" />
+    <Content Include="Photo for Design Form\Clock.png" />
+    <Content Include="Photo for Design Form\Comment.png" />
+    <Content Include="Photo for Design Form\Company.png" />
+    <Content Include="Photo for Design Form\Compass.png" />
+    <Content Include="Photo for Design Form\Component.png" />
+    <Content Include="Photo for Design Form\Computer 16x16.png" />
+    <Content Include="Photo for Design Form\computers02600tj0.jpg" />
+    <Content Include="Photo for Design Form\Copy.png" />
+    <Content Include="Photo for Design Form\Create.png" />
+    <Content Include="Photo for Design Form\Cut.png" />
+    <Content Include="Photo for Design Form\Danger.png" />
+    <Content Include="Photo for Design Form\Database.png" />
+    <Content Include="Photo for Design Form\Delete.png" />
+    <Content Include="Photo for Design Form\Delivery.png" />
+    <Content Include="Photo for Design Form\Diagram.png" />
+    <Content Include="Photo for Design Form\Dial.png" />
+    <Content Include="Photo for Design Form\Disaster.png" />
+    <Content Include="Photo for Design Form\Display 16x16.png" />
+    <Content Include="Photo for Design Form\Dollar.png" />
+    <Content Include="Photo for Design Form\Down.png" />
+    <Content Include="Photo for Design Form\Download.png" />
+    <Content Include="Photo for Design Form\Downloads folder.png" />
+    <Content Include="Photo for Design Form\E-mail.png" />
+    <Content Include="Photo for Design Form\Earth.png" />
+    <Content Include="Photo for Design Form\Eject.png" />
+    <Content Include="Photo for Design Form\Equipment.png" />
+    <Content Include="Photo for Design Form\Erase.png" />
+    <Content Include="Photo for Design Form\Error.png" />
+    <Content Include="Photo for Design Form\Euro.png" />
+    <Content Include="Photo for Design Form\Exit.png" />
+    <Content Include="Photo for Design Form\Expand.png" />
+    <Content Include="Photo for Design Form\Eye.png" />
+    <Content Include="Photo for Design Form\Fall.png" />
+    <Content Include="Photo for Design Form\Fast-forward.png" />
+    <Content Include="Photo for Design Form\Favourites.png" />
+    <Content Include="Photo for Design Form\Female symbol.png" />
+    <Content Include="Photo for Design Form\Female.png" />
+    <Content Include="Photo for Design Form\Film.png" />
+    <Content Include="Photo for Design Form\Filter.png" />
+    <Content Include="Photo for Design Form\Find.png" />
+    <Content Include="Photo for Design Form\First record.png" />
+    <Content Include="Photo for Design Form\First.png" />
+    <Content Include="Photo for Design Form\Flag.png" />
+    <Content Include="Photo for Design Form\Flash drive.png" />
+    <Content Include="Photo for Design Form\Folder.png" />
+    <Content Include="Photo for Design Form\Forbidden.png" />
+    <Content Include="Photo for Design Form\Forward.png" />
+    <Content Include="Photo for Design Form\Free bsd.png" />
+    <Content Include="Photo for Design Form\Gift.png" />
+    <Content Include="Photo for Design Form\Globe.png" />
+    <Content Include="Photo for Design Form\Go back.png" />
+    <Content Include="Photo for Design Form\Go forward.png" />
+    <Content Include="Photo for Design Form\Go.png" />
+    <Content Include="Photo for Design Form\Good mark.png" />
+    <Content Include="Photo for Design Form\Green bookmark.png" />
+    <Content Include="Photo for Design Form\Green pin.png" />
+    <Content Include="Photo for Design Form\Green tag.png" />
+    <Content Include="Photo for Design Form\Hard disk.png" />
+    <Content Include="Photo for Design Form\Heart.png" />
+    <Content Include="Photo for Design Form\Help book 3d.png" />
+    <Content Include="Photo for Design Form\Help book.png" />
+    <Content Include="Photo for Design Form\Help symbol.png" />
+    <Content Include="Photo for Design Form\Help.png" />
+    <Content Include="Photo for Design Form\Hint.png" />
+    <Content Include="Photo for Design Form\History.png" />
+    <Content Include="Photo for Design Form\Home.png" />
+    <Content Include="Photo for Design Form\Hourglass.png" />
+    <Content Include="Photo for Design Form\How-to.png" />
+    <Content Include="Photo for Design Form\Hungup.png" />
+    <Content Include="Photo for Design Form\In-yang.png" />
+    <Content Include="Photo for Design Form\Info.png" />
+    <Content Include="Photo for Design Form\Invoice_Icon125_128_01.jpg" />
+    <Content Include="Photo for Design Form\Iphone.png" />
+    <Content Include="Photo for Design Form\key.jpg" />
+    <Content Include="Photo for Design Form\Key.png" />
+    <Content Include="Photo for Design Form\Last recor.png" />
+    <Content Include="Photo for Design Form\Last.png" />
+    <Content Include="Photo for Design Form\Left-right.png" />
+    <Content Include="Photo for Design Form\License.txt" />
+    <Content Include="Photo for Design Form\Lightning.png" />
+    <Content Include="Photo for Design Form\Liner.png" />
+    <Content Include="Photo for Design Form\Linux.png" />
+    <Content Include="Photo for Design Form\List.png" />
+    <Content Include="Photo for Design Form\Load.png" />
+    <Content Include="Photo for Design Form\lock-and-key-icon-thumb355812.jpg" />
+    <Content Include="Photo for Design Form\Lock.png" />
+    <Content Include="Photo for Design Form\logo.gif" />
+    <Content Include="Photo for Design Form\Low rating.png" />
+    <Content Include="Photo for Design Form\Magic wand.png" />
+    <Content Include="Photo for Design Form\Mail.png" />
+    <Content Include="Photo for Design Form\Male symbol.png" />
+    <Content Include="Photo for Design Form\Male.png" />
+    <Content Include="Photo for Design Form\Medium rating.png" />
+    <Content Include="Photo for Design Form\Message.png" />
+    <Content Include="Photo for Design Form\Mobile-phone.png" />
+    <Content Include="Photo for Design Form\Modify.png" />
+    <Content Include="Photo for Design Form\Money-Bag-icon.png" />
+    <Content Include="Photo for Design Form\Move.png" />
+    <Content Include="Photo for Design Form\Movie.png" />
+    <Content Include="Photo for Design Form\Music.png" />
+    <Content Include="Photo for Design Form\Mute.png" />
+    <Content Include="Photo for Design Form\Network connection.png" />
+    <Content Include="Photo for Design Form\New document.png" />
+    <Content Include="Photo for Design Form\New.png" />
+    <Content Include="Photo for Design Form\New\01.ico" />
+    <Content Include="Photo for Design Form\New\02.ico" />
+    <Content Include="Photo for Design Form\New\03.ico" />
+    <Content Include="Photo for Design Form\New\04.ico" />
+    <Content Include="Photo for Design Form\New\05.ico" />
+    <Content Include="Photo for Design Form\New\06.ico" />
+    <Content Include="Photo for Design Form\New\07.ico" />
+    <Content Include="Photo for Design Form\New\08.ico" />
+    <Content Include="Photo for Design Form\New\09.ico" />
+    <Content Include="Photo for Design Form\New\10.ico" />
+    <Content Include="Photo for Design Form\New\11.ico" />
+    <Content Include="Photo for Design Form\New\12.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28401%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28402%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28403%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28404%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28405%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28406%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28407%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28408%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28409%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28410%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28411%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28412%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28413%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28414%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28415%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28416%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28417%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28418%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28419%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28420%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28421%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28422%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28423%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28424%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28425%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28426%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28427%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28428%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28429%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28430%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28431%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28432%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28433%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28434%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28435%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28436%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28437%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28438%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28439%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28440%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28441%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28442%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28443%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28444%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28445%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28446%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28447%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28448%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28449%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28450%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28451%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28452%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28453%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28454%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28455%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28456%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28457%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28458%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28459%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28460%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28461%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28462%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28463%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28464%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28465%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28466%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28467%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28468%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28469%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28470%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28471%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28472%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28473%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28474%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28475%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28476%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28477%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28478%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28479%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28480%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28481%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28482%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28483%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28484%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28485%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28486%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28487%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28488%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28489%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28490%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28491%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28492%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28493%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28494%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28495%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28496%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28497%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28498%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28499%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28500%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28501%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28502%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28503%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28504%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28505%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28506%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28507%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28508%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28509%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28510%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28511%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28512%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28513%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28514%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28515%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28516%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28517%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28518%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28519%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28520%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28521%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28522%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28523%29.ico" />
+    <Content Include="Photo for Design Form\New\125 High Quality Hand Picked Icon Sets\125 High Quality Hand Picked Icon Sets\1 %28524%29.ico" />
+    <Content Include="Photo for Design Form\New\13.ico" />
+    <Content Include="Photo for Design Form\New\14.ico" />
+    <Content Include="Photo for Design Form\New\Alien Folder.ico" />
+    <Content Include="Photo for Design Form\New\Alienware.ico" />
+    <Content Include="Photo for Design Form\New\Alienware1.ico" />
+    <Content Include="Photo for Design Form\New\Alienware10.ico" />
+    <Content Include="Photo for Design Form\New\Alienware11.ico" />
+    <Content Include="Photo for Design Form\New\Alienware12.ico" />
+    <Content Include="Photo for Design Form\New\Alienware13.ico" />
+    <Content Include="Photo for Design Form\New\Alienware2.ico" />
+    <Content Include="Photo for Design Form\New\Alienware3.ico" />
+    <Content Include="Photo for Design Form\New\Alienware4.ico" />
+    <Content Include="Photo for Design Form\New\Alienware5.ico" />
+    <Content Include="Photo for Design Form\New\Alienware6.ico" />
+    <Content Include="Photo for Design Form\New\Alienware7.ico" />
+    <Content Include="Photo for Design Form\New\Alienware8.ico" />
+    <Content Include="Photo for Design Form\New\Alienware9.ico" />
+    <Content Include="Photo for Design Form\New\AlienwarePrinter.ico" />
+    <Content Include="Photo for Design Form\New\BinEmpty.ico" />
+    <Content Include="Photo for Design Form\New\BinEmptya.ico" />
+    <Content Include="Photo for Design Form\New\BinFull.ico" />
+    <Content Include="Photo for Design Form\New\BinFulla.ico" />
+    <Content Include="Photo for Design Form\New\box_16.png" />
+    <Content Include="Photo for Design Form\New\box_24.png" />
+    <Content Include="Photo for Design Form\New\box_256.png" />
+    <Content Include="Photo for Design Form\New\box_32.png" />
+    <Content Include="Photo for Design Form\New\box_48.png" />
+    <Content Include="Photo for Design Form\New\brush_16.png" />
+    <Content Include="Photo for Design Form\New\brush_24.png" />
+    <Content Include="Photo for Design Form\New\brush_256.png" />
+    <Content Include="Photo for Design Form\New\brush_32.png" />
+    <Content Include="Photo for Design Form\New\brush_48.png" />
+    <Content Include="Photo for Design Form\New\Brush_win7.ico" />
+    <Content Include="Photo for Design Form\New\buddy icons\error.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\exit.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\fifteenpieces.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\file-manager.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\fileshare.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\filetypes.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\firefox.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\firefox_alt.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\firewall.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\flag.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\flash.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\font.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\fonts.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\fortress.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gadu.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gaim.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gaimphone.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\galeon.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\games.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gimp.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gnome_apps.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\go.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\go_kde.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gpg.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gpgsm.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\graphic-design.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\gvim.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\harddrive.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\harddrive2.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\hardware.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\help_index.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\hibernate.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\highlight.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\home&amp;food.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\home.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\hwinfo.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\icons.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\iconthemes.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\important.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\imput_device_.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\input_devices_settings.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\Internet Connection Tools.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\internet&amp;networking.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\internet.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\irc_protocol.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\irkick.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\Iskat.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\jabber_protocol.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\java.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\juk.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\k3b.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kaboodle.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kaddressbook.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kalarm.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kappfinder.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\karbon.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\karm.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kasteroids.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kate.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\katomic.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\katuberling.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbackgammon.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbackgammon_engine.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbattleship.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbemusedsrv.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kblackbox.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbounce.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbtobexclient.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kbtserialchat.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcalc.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcharselect.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kchart.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmdevices.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmdf.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmfontinst.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmkicker.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmkwm.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmmemory.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmmidi.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmpartitions.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmpci.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmprocessor.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmscsi.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmsound.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmsystem.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcmx.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcoloredit.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kcontrol.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\KDE  Resources Configuration.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdebluetooth.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kded.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdeprintfax.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdevelop.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdf.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdisknav.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdmconfig.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kdvi.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\kedit.png" />
+    <Content Include="Photo for Design Form\New\buddy icons\keditbookmarks.png" />
+    <Content Include="Photo for Design Form\New\cabriolet.ico" />
+    <Content Include="Photo for Design Form\New\car key.ico" />
+    <Content Include="Photo for Design Form\New\car repair.ico" />
+    <Content Include="Photo for Design Form\New\close_16.png" />
+    <Content Include="Photo for Design Form\New\close_24.png" />
+    <Content Include="Photo for Design Form\New\close_256.png" />
+    <Content Include="Photo for Design Form\New\close_32.png" />
+    <Content Include="Photo for Design Form\New\close_48.png" />
+    <Content Include="Photo for Design Form\New\Close_win7.ico" />
+    <Content Include="Photo for Design Form\New\company.ico" />
+    <Content Include="Photo for Design Form\New\credit cards.ico" />
+    <Content Include="Photo for Design Form\New\CyclopAlienware.ico" />
+    <Content Include="Photo for Design Form\New\delete_16.png" />
+    <Content Include="Photo for Design Form\New\delete_24.png" />
+    <Content Include="Photo for Design Form\New\delete_256.png" />
+    <Content Include="Photo for Design Form\New\delete_32.png" />
+    <Content Include="Photo for Design Form\New\delete_48.png" />
+    <Content Include="Photo for Design Form\New\Delete_win7.ico" />
+    <Content Include="Photo for Design Form\New\disc_16.png" />
+    <Content Include="Photo for Design Form\New\disc_24.png" />
+    <Content Include="Photo for Design Form\New\disc_256.png" />
+    <Content Include="Photo for Design Form\New\disc_32.png" />
+    <Content Include="Photo for Design Form\New\disc_48.png" />
+    <Content Include="Photo for Design Form\New\Disc_win7.ico" />
+    <Content Include="Photo for Design Form\New\document_16.png" />
+    <Content Include="Photo for Design Form\New\document_24.png" />
+    <Content Include="Photo for Design Form\New\document_256.png" />
+    <Content Include="Photo for Design Form\New\document_32.png" />
+    <Content Include="Photo for Design Form\New\document_48.png" />
+    <Content Include="Photo for Design Form\New\document_add_16.png" />
+    <Content Include="Photo for Design Form\New\document_add_24.png" />
+    <Content Include="Photo for Design Form\New\document_add_256.png" />
+    <Content Include="Photo for Design Form\New\document_add_32.png" />
+    <Content Include="Photo for Design Form\New\document_add_48.png" />
+    <Content Include="Photo for Design Form\New\Document_Add_win7.ico" />
+    <Content Include="Photo for Design Form\New\document_delete_16.png" />
+    <Content Include="Photo for Design Form\New\document_delete_24.png" />
+    <Content Include="Photo for Design Form\New\document_delete_256.png" />
+    <Content Include="Photo for Design Form\New\document_delete_32.png" />
+    <Content Include="Photo for Design Form\New\document_delete_48.png" />
+    <Content Include="Photo for Design Form\New\Document_Delete_win7.ico" />
+    <Content Include="Photo for Design Form\New\Document_win7.ico" />
+    <Content Include="Photo for Design Form\New\empty ATM.ico" />
+    <Content Include="Photo for Design Form\New\favourites_16.png" />
+    <Content Include="Photo for Design Form\New\favourites_24.png" />
+    <Content Include="Photo for Design Form\New\favourites_256.png" />
+    <Content Include="Photo for Design Form\New\favourites_32.png" />
+    <Content Include="Photo for Design Form\New\favourites_48.png" />
+    <Content Include="Photo for Design Form\New\Favourites_win7.ico" />
+    <Content Include="Photo for Design Form\New\Firefox02.ico" />
+    <Content Include="Photo for Design Form\New\folder_16.png" />
+    <Content Include="Photo for Design Form\New\folder_24.png" />
+    <Content Include="Photo for Design Form\New\folder_256.png" />
+    <Content Include="Photo for Design Form\New\folder_32.png" />
+    <Content Include="Photo for Design Form\New\folder_48.png" />
+    <Content Include="Photo for Design Form\New\folder_add_16.png" />
+    <Content Include="Photo for Design Form\New\folder_add_24.png" />
+    <Content Include="Photo for Design Form\New\folder_add_256.png" />
+    <Content Include="Photo for Design Form\New\folder_add_32.png" />
+    <Content Include="Photo for Design Form\New\folder_add_48.png" />
+    <Content Include="Photo for Design Form\New\folder_delete_16.png" />
+    <Content Include="Photo for Design Form\New\folder_delete_24.png" />
+    <Content Include="Photo for Design Form\New\folder_delete_256.png" />
+    <Content Include="Photo for Design Form\New\folder_delete_32.png" />
+    <Content Include="Photo for Design Form\New\folder_delete_48.png" />
+    <Content Include="Photo for Design Form\New\Folder_Delete_win7.ico" />
+    <Content Include="Photo for Design Form\New\Folder_New_win7.ico" />
+    <Content Include="Photo for Design Form\New\Folder_win7.ico" />
+    <Content Include="Photo for Design Form\New\Globe_win7.ico" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\activex-cache.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\administrative-tools.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\audio-cd.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\bitmap-image.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\cd-rom-driver.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\closed-floder.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\computer.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\configuration-settings.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\control-panel.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\default-document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\desktop.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\e-mail.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\entire-network.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\floppy-driver3.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\floppy-driver5.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\fonts.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\gif-image.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\hard-driver.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\help-and-support.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\internet-document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\Internet-Explorer.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\Internet.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\jpeg-image.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\media-cilp.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\midi-sequence.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\movie-cilp.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\ms-dos-application.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\ms-dos-batch-file.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my computer.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my-favorites.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my-music.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my-network-places.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my-pictures.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my-recent-document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\my-videos.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\network-connections.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\network-driver-connected.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\network-driver-offline.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\network-service.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\open-floder.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\printers-and-faxes.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\program-group.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\ram-driver.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\recycle-bin-empty.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\recycle-bin-full.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\removable-driver3.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\rich-text-document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\run.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\scanners-and-cameras.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\scheduled-tasks.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\search.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\share-overlay.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\shared-music.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\shared-pictures.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\shortcut-overlay.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\subscriptions.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\text-document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\url-history.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\video-cilp.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\wav-sound.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\web-floder.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\workgroup.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\write-document.png" />
+    <Content Include="Photo for Design Form\New\icon for transformers_png\zip-file.png" />
+    <Content Include="Photo for Design Form\New\icon-banner-shimmer.png" />
+    <Content Include="Photo for Design Form\New\icons_fullset.png" />
+    <Content Include="Photo for Design Form\New\ico\1.ico" />
+    <Content Include="Photo for Design Form\New\ico\2.ico" />
+    <Content Include="Photo for Design Form\New\ico\3.ico" />
+    <Content Include="Photo for Design Form\New\ico\4.ico" />
+    <Content Include="Photo for Design Form\New\ico\5.ico" />
+    <Content Include="Photo for Design Form\New\ico\6.ico" />
+    <Content Include="Photo for Design Form\New\license.txt" />
+    <Content Include="Photo for Design Form\New\microphone_16.png" />
+    <Content Include="Photo for Design Form\New\microphone_24.png" />
+    <Content Include="Photo for Design Form\New\microphone_256.png" />
+    <Content Include="Photo for Design Form\New\microphone_32.png" />
+    <Content Include="Photo for Design Form\New\microphone_48.png" />
+    <Content Include="Photo for Design Form\New\Microphone_win7.ico" />
+    <Content Include="Photo for Design Form\New\music_16.png" />
+    <Content Include="Photo for Design Form\New\music_24.png" />
+    <Content Include="Photo for Design Form\New\music_256.png" />
+    <Content Include="Photo for Design Form\New\music_32.png" />
+    <Content Include="Photo for Design Form\New\music_48.png" />
+    <Content Include="Photo for Design Form\New\Music_win7.ico" />
+    <Content Include="Photo for Design Form\New\open_16.png" />
+    <Content Include="Photo for Design Form\New\open_24.png" />
+    <Content Include="Photo for Design Form\New\open_256.png" />
+    <Content Include="Photo for Design Form\New\open_32.png" />
+    <Content Include="Photo for Design Form\New\open_48.png" />
+    <Content Include="Photo for Design Form\New\Open_win7.ico" />
+    <Content Include="Photo for Design Form\New\Parcel_win7.ico" />
+    <Content Include="Photo for Design Form\New\passport.ico" />
+    <Content Include="Photo for Design Form\New\play_16.png" />
+    <Content Include="Photo for Design Form\New\play_24.png" />
+    <Content Include="Photo for Design Form\New\play_256.png" />
+    <Content Include="Photo for Design Form\New\play_32.png" />
+    <Content Include="Photo for Design Form\New\play_48.png" />
+    <Content Include="Photo for Design Form\New\Play_win7.ico" />
+    <Content Include="Photo for Design Form\New\Preview.jpg" />
+    <Content Include="Photo for Design Form\New\readme.txt" />
+    <Content Include="Photo for Design Form\New\realty.ico" />
+    <Content Include="Photo for Design Form\New\recycle_16.png" />
+    <Content Include="Photo for Design Form\New\recycle_24.png" />
+    <Content Include="Photo for Design Form\New\recycle_256.png" />
+    <Content Include="Photo for Design Form\New\recycle_32.png" />
+    <Content Include="Photo for Design Form\New\recycle_48.png" />
+    <Content Include="Photo for Design Form\New\Recycle_win7.ico" />
+    <Content Include="Photo for Design Form\New\shimmer-icons-readme.txt" />
+    <Content Include="Photo for Design Form\New\software_16.png" />
+    <Content Include="Photo for Design Form\New\software_24.png" />
+    <Content Include="Photo for Design Form\New\software_256.png" />
+    <Content Include="Photo for Design Form\New\software_32.png" />
+    <Content Include="Photo for Design Form\New\software_48.png" />
+    <Content Include="Photo for Design Form\New\Software_win7.ico" />
+    <Content Include="Photo for Design Form\New\time management.ico" />
+    <Content Include="Photo for Design Form\New\tourist industry.ico" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED 9 SMOKE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED ALIAS ARROW.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED APPLE BLUE FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED APPLE BRANDED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED APPLE CLEAR FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED APPLE GRAPHITE FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED APPLE SMOKE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED APPLICATIONS FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED ARROW DOWN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED BALL IMBEDDED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED BALL ON TOP.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED BLACK PEN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED BLACK PEN2.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED BLANK DOCUMENT.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED BLUE GLASS APPLE HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED CD DVD.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED CD MP3.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED CD.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED CLASSIC FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED CLASSIC HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED CLEAR GLASS APPLE HARDDRIV.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC ALIAS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC APPLE BLUE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC APPLE GRAPHITE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC APPLE RED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC APPLICATIONS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC AUDIO MP3.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC AUDIO PLAIN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC CLASSIC FILE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC DOWNLOADED FILE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC FINDER FILE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC INTERNET FILE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC INTERNET HTML.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC LIBRARY.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC MOVIE DV.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC MOVIES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC PICTURES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC PLAIN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC STAR TREK.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC USER FILE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOC UTILITIES FILE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOCUMENTS FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOCUMENTS HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOWNLOADS FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED DOWNLOADS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED EARTH.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FILM REEL.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER ALIAS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER APPLE BLUE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER APPLE GRAPHITE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER APPLE RED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER APPLE WHITE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER APPLICATIONS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER CLASSIC.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER DOCUMENTS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER DOWNLOADS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER FINDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER HOME.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER INTERNET.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER LIBRARY.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER MOVIES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER MUSIC.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER OSX.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER PICTURES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER PLAIN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER SCREWDRIVER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER STAR TREK.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER USERS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER UTILITIES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FOLDER WRENCH.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED FULL DOCUMENT.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED G5 DESKTOP.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED GRAPHITE GLASS APPLE HARDD.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD ALIAS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD APPLE BLUE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD APPLE GRAPHITE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD APPLE RED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD APPLICATIONS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD CLASSIC.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD DISK IMAGE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD DOCUMENTS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD FINDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD FIREWIRE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD INSTALLERS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD INTERNET.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD LABLED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD LIBRARY.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD MOVIES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD MUSIC.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD OSX.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD PICTURES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD PLAIN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD SHADOW APPLE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD SHADOW FIREWIRE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD SHADOW OSX.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD STAR TREK.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD USERS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HD UTILITIES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HOME FILES HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED HOME.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED IBOOKZ PLAIN.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED ICONZ.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED INSTALLERS HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED INTERNET DOCUMENT.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED INTERNET FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED INTERNET HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED LIBRARY.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MAC OS X HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MAC SMOKE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MAC.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MOUNTED DISK IMAGE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MOUNTED DRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MOUNTED NETWORK HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MOVIES FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MOVIES HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MUSIC FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED MUSIC HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED PICTURES FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED PICTURES HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED PICTURES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED PLAIN CD.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED PLAIN FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED PUBLIC A FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED ROCKET SHIP.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED SCREW DRIVER - FLAT HEAD.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED SCREWDRIVER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED SHAREPOINTS.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED STAR FLEET FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED STAR TREK HARDDRIVE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED STAR TREK LOGO.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED STARTREK.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED SYSTEM FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED TNG COMMUNICATOR LOGO.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED TRASH EMPTY.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED TRASH FULL.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED USER BLUE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED USER GRAPHITE.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED USER RED.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED UTILITIES B FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED UTILITIES FOLDER.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED UTILITIES HARDDRIVE A.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED UTILITIES HARDDRIVE B.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED UTILITIES.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED WRENCH.png" />
+    <Content Include="Photo for Design Form\New\TRITANIUM SQUARED ICONS\TRITANIUM SQUARED X SMOKE.png" />
+    <Content Include="Photo for Design Form\New\Wall1.jpg" />
+    <Content Include="Photo for Design Form\New\Wall2.jpg" />
+    <Content Include="Photo for Design Form\New\warning_16.png" />
+    <Content Include="Photo for Design Form\New\warning_24.png" />
+    <Content Include="Photo for Design Form\New\warning_256.png" />
+    <Content Include="Photo for Design Form\New\warning_32.png" />
+    <Content Include="Photo for Design Form\New\warning_48.png" />
+    <Content Include="Photo for Design Form\New\Warning_win7.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Add.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Back.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Bar Chart.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Comment.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Delete.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Email.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Exit.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Info.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Line Chart.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Load.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Loading.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Modify.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Next.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Picture.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Pie Chart.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Print.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Profile.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Save.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Search.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\ICO\Warning.ico" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Add.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Back.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Bar Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Comment.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Delete.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Email.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Exit.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Info.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Line Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Load.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Loading.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Modify.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Next.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Picture.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Pie Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Print.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Profile.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Save.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Search.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-24\Warning.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Add.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Back.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Bar Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Comment.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Delete.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Email.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Exit.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Info.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Line Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Load.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Loading.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Modify.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Next.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Picture.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Pie Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Print.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Profile.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Save.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Search.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-32\Warning.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Add.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Back.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Bar Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Comment.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Delete.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Email.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Exit.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Info.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Line Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Load.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Loading.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Modify.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Next.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Picture.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Pie Chart.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Print.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Profile.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Save.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Search.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\PNG-48\Warning.png" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\Terms Of Use.txt" />
+    <Content Include="Photo for Design Form\New\Web-Application-Icons-Set\Web Application Icon Set.jpg" />
+    <Content Include="Photo for Design Form\New\webcam.ico" />
+    <Content Include="Photo for Design Form\New\world_16.png" />
+    <Content Include="Photo for Design Form\New\world_24.png" />
+    <Content Include="Photo for Design Form\New\world_256.png" />
+    <Content Include="Photo for Design Form\New\world_32.png" />
+    <Content Include="Photo for Design Form\New\world_48.png" />
+    <Content Include="Photo for Design Form\Next track.png" />
+    <Content Include="Photo for Design Form\Next.png" />
+    <Content Include="Photo for Design Form\No-entry.png" />
+    <Content Include="Photo for Design Form\No.png" />
+    <Content Include="Photo for Design Form\Notes.png" />
+    <Content Include="Photo for Design Form\OK.png" />
+    <Content Include="Photo for Design Form\OpenProj_App_Icon_by_marc2o.png" />
+    <Content Include="Photo for Design Form\Paste.png" />
+    <Content Include="Photo for Design Form\Pause.png" />
+    <Content Include="Photo for Design Form\People.png" />
+    <Content Include="Photo for Design Form\Percent.png" />
+    <Content Include="Photo for Design Form\Person.png" />
+    <Content Include="Photo for Design Form\Phone number.png" />
+    <Content Include="Photo for Design Form\Phone.png" />
+    <Content Include="Photo for Design Form\Pie chart.png" />
+    <Content Include="Photo for Design Form\Pinion.png" />
+    <Content Include="Photo for Design Form\Play-music.png" />
+    <Content Include="Photo for Design Form\Play.png" />
+    <Content Include="Photo for Design Form\Playback.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\about.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\add.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\apple.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\chat.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\clock.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\close.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\del.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\door.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\download.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\earth.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\email.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\feed.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\flag.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\group.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\heart.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\home.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\key.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\left.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Link.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\locked.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\music.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\ok.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\open.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\pause.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\power.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\question.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\right.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\star.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\stop.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\tool.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\user.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\windows.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\18\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\about.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\add.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\apple.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\chat.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\clock.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\close.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\del.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\door.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\download.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\earth.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\email.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\feed.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\flag.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\group.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\heart.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\home.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\key.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\left.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Link.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\locked.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\music.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\ok.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\open.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\pause.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\power.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\question.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\right.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\star.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\stop.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\tool.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\user.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\windows.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\24\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\about.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\add.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\apple.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\chat.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\clock.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\close.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\del.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\door.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\down.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\download.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\earth.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\email.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\feed.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\flag.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\group.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\heart.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\home.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\key.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\left.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Link.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\locked.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\music.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\ok.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\open.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\pause.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\power.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\question.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\right.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\star.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\stop.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\tool.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\up.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\user.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\windows.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\Blue\32\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\about.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\add.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\apple.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\chat.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\clock.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\close.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\del.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\door.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\download.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\earth.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\email.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\feed.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\flag.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\group.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\heart.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\home.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\key.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\left.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Link.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\locked.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\music.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\ok.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\open.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\pause.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\power.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\question.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\right.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\star.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\stop.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\tool.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\user.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\windows.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\Green\18\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\about.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\add.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\apple.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\chat.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\clock.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\close.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\del.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\door.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\download.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\earth.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\email.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\feed.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\flag.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\group.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\heart.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\home.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\key.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\left.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Link.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\locked.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\music.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\ok.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\open.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\pause.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\power.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\question.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\right.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\star.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\stop.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\tool.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\user.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\windows.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\Green\24\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\about.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\add.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\apple.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\chat.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\clock.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\close.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\del.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\door.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\down.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\download.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\earth.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\email.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\feed.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\flag.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\group.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\heart.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\home.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\key.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\left.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Link.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\locked.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\music.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_02.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\ok.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\open.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\pause.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\power.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\question.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\right.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\star.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\stop.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\tool.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\up.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\user.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\windows.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\Green\32\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\about.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\add.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\apple.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\chat.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\clock.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\close.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\del.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\door.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\download.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\earth.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\email.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\feed.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\flag.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\group.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\heart.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\home.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\key.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\left.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Link.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\locked.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\music.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\ok.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\open.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\pause.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\power.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\question.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\right.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\star.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\stop.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\tool.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\user.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\windows.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\18\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\about.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\add.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\apple.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\chat.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\clock.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\close.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\del.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\door.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\download.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\earth.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\email.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\feed.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\flag.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\group.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\heart.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\home.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\key.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\left.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Link.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\locked.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\music.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\ok.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\open.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\pause.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\power.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\question.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\right.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\star.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\stop.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\tool.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\user.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\windows.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\24\zoomout.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\about.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\add.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\apple.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_left.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_left_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_left_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_right.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_right_down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_right_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\arrow_up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Backward.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Backward_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts02.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts04.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts05.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\charts06.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\chat.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\chat_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\clock.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\clock_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\close.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Cycle.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\del.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Dollar.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\door.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\down.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\download.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\earth.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\email.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Favorite.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\feed.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\flag.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Forward.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Forward_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\group.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\heart.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\home.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\key.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\left.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Link.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\locked.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\locked_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\money_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\money_02.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\money_03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\music.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\music_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_03.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_04.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_05.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_06.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_07.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_08.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_09.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_10.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_11.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_12.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_13.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_14.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\object_15.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\ok.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\open.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\pause.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Percentage.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Phone.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\power.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\question.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Recycle.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\refresh.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Repeat.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\Repeat_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\right.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\shopping.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\star.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\stop.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\tool.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\unlocked.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\unlocked_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\up.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\up_01.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\user.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\windows.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\zoom.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\zoomin.png" />
+    <Content Include="Photo for Design Form\PNG\yellow\32\zoomout.png" />
+    <Content Include="Photo for Design Form\Previous record.png" />
+    <Content Include="Photo for Design Form\Previous.png" />
+    <Content Include="Photo for Design Form\Print.png" />
+    <Content Include="Photo for Design Form\Problem.png" />
+    <Content Include="Photo for Design Form\Question.png" />
+    <Content Include="Photo for Design Form\qui_trinh_dat_hang_buoc_3_icon.jpg" />
+    <Content Include="Photo for Design Form\Radiation.png" />
+    <Content Include="Photo for Design Form\Raise.png" />
+    <Content Include="Photo for Design Form\Record.png" />
+    <Content Include="Photo for Design Form\Red bookmark.png" />
+    <Content Include="Photo for Design Form\Red mark.png" />
+    <Content Include="Photo for Design Form\Red pin.png" />
+    <Content Include="Photo for Design Form\Red star.png" />
+    <Content Include="Photo for Design Form\Red tag.png" />
+    <Content Include="Photo for Design Form\Redo.png" />
+    <Content Include="Photo for Design Form\Refresh.png" />
+    <Content Include="Photo for Design Form\Remove.png" />
+    <Content Include="Photo for Design Form\Repair.png" />
+    <Content Include="Photo for Design Form\Report.png" />
+    <Content Include="Photo for Design Form\Retort.png" />
+    <Content Include="Photo for Design Form\Rewind.png" />
+    <Content Include="Photo for Design Form\Sad.png" />
+    <Content Include="Photo for Design Form\samefolderjustbigger.png" />
+    <Content Include="Photo for Design Form\Save.png" />
+    <Content Include="Photo for Design Form\Schedule.png" />
+    <Content Include="Photo for Design Form\Script.png" />
+    <Content Include="Photo for Design Form\Search.png" />
+    <Content Include="Photo for Design Form\Shield 16x16.png" />
+    <Content Include="Photo for Design Form\Shopping cart.png" />
+    <Content Include="Photo for Design Form\Silence.png" />
+    <Content Include="Photo for Design Form\Smile.png" />
+    <Content Include="Photo for Design Form\Sound.png" />
+    <Content Include="Photo for Design Form\Stop sign.png" />
+    <Content Include="Photo for Design Form\Stop.png" />
+    <Content Include="Photo for Design Form\Stopwatch.png" />
+    <Content Include="Photo for Design Form\Sum.png" />
+    <Content Include="Photo for Design Form\Sync.png" />
+    <Content Include="Photo for Design Form\Table.png" />
+    <Content Include="Photo for Design Form\Target.png" />
+    <Content Include="Photo for Design Form\Taxi.png" />
+    <Content Include="Photo for Design Form\Terminate.png" />
+    <Content Include="Photo for Design Form\Text preview.png" />
+    <Content Include="Photo for Design Form\Text.png" />
+    <Content Include="Photo for Design Form\Thumbs down.png" />
+    <Content Include="Photo for Design Form\Thumbs up.png" />
+    <Content Include="Photo for Design Form\Toolbox.png" />
+    <Content Include="Photo for Design Form\Top.png" />
+    <Content Include="Photo for Design Form\Trackback.png" />
+    <Content Include="Photo for Design Form\Trash.png" />
+    <Content Include="Photo for Design Form\Tune.png" />
+    <Content Include="Photo for Design Form\Turn off.png" />
+    <Content Include="Photo for Design Form\Twitter.png" />
+    <Content Include="Photo for Design Form\Undo.png" />
+    <Content Include="Photo for Design Form\Unlock.png" />
+    <Content Include="Photo for Design Form\Up-down.png" />
+    <Content Include="Photo for Design Form\Up.png" />
+    <Content Include="Photo for Design Form\Update.png" />
+    <Content Include="Photo for Design Form\Upload.png" />
+    <Content Include="Photo for Design Form\User group.png" />
+    <Content Include="Photo for Design Form\user-icon.jpg" />
+    <Content Include="Photo for Design Form\user-icon.png" />
+    <Content Include="Photo for Design Form\user.jpg" />
+    <Content Include="Photo for Design Form\View.png" />
+    <Content Include="Photo for Design Form\Volume.png" />
+    <Content Include="Photo for Design Form\Wallet.png" />
+    <Content Include="Photo for Design Form\wallpaper_xp___linux_por_txiru_%281%29.jpg" />
+    <Content Include="Photo for Design Form\Warning.png" />
+    <Content Include="Photo for Design Form\Wrench.png" />
+    <Content Include="Photo for Design Form\Yellow bookmark.png" />
+    <Content Include="Photo for Design Form\Yellow pin.png" />
+    <Content Include="Photo for Design Form\Yellow tag.png" />
+    <Content Include="Photo for Design Form\Yes.png" />
+    <Content Include="Photo for Design Form\Zenwood-Linux-wallpaper.jpg" />
+    <Content Include="Photo for Design Form\Zoom.png" />
+    <None Include="Resources\Tim-hieu-ve-truong-Dai-hoc-UNETI.jpeg" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\menu1.png" />
+    <None Include="Resources\menu2.png" />
+    <None Include="Resources\menu.ico" />
+    <None Include="Resources\menu3.png" />
+    <None Include="Resources\list_3876184.png" />
+    <None Include="Resources\menu_12998167.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\7a5068405ea0756e3c303f4866beb37f.jpg" />
+    <None Include="Resources\7a5068405ea0756e3c303f4866beb37f1.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="inthongtin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+  </Target>
+</Project>
